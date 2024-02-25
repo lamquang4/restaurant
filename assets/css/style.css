@@ -40,7 +40,7 @@ button{
 html{
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+
 
 }
 #slidersss-section{
@@ -195,7 +195,7 @@ html{
   @media(max-width:768px){
     .slidersss{
       height: 400px;
-     
+     width: 100%;
   }
   }
   @media (max-width:700px){
@@ -242,7 +242,7 @@ html{
       margin-top: 112px;
     }
     .slidersss{
-     
+      width: 100%;
       height: 210px;
   }
   .slidersss .buttonsss button{
@@ -263,6 +263,7 @@ html{
   @media (max-width:400px){
     .slidersss{
       height: 185px;
+      width: 100%;
   }
   .slidersss .buttonsss button{
     width: 30px;
@@ -368,7 +369,7 @@ html{
 
   .banner{
     min-height: 80vh;
-   
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,8 +435,9 @@ form input[type = submit]:hover{
 @media(max-width: 992px){
     .card-container{
         grid-template-columns: 100%;
-        width: 100vw;
+        width: 100%;
     }
+   
     .card-img{
         height: 320px;
     }
