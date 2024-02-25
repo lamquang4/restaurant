@@ -287,7 +287,7 @@ html{
 }
 #container-product{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
   #container-product #product-list{
     display: flex;
@@ -367,22 +367,24 @@ html{
   }
 
   .banner{
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/image/banner-img.jpg") center/cover no-repeat;
+    min-height: 80vh;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-color: #fff;
+
     padding-bottom: 20px;
  
 }
 .card-container{
     display: grid;
     grid-template-columns: 420px 420px;
+      
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .card-img{
-    background: url("/assets/image/card-img.jpg") center/cover no-repeat;
+
 }
 .banner h2{
     padding-bottom: 40px;
@@ -390,7 +392,7 @@ color: #fff;
 }
 .card-content{
     background: #fff;
-    height: 330px;
+    height: 350px;
 }
 .card-content h3{
     text-align: center;
@@ -435,12 +437,6 @@ form input[type = submit]:hover{
         width: 100vw;
     }
     .card-img{
-        height: 330px;
+        height: 320px;
     }
-}
-@media(width<=992px){
-  .banner{
-    background: none;
-    color: black;
-  }
 }
