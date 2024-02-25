@@ -1,0 +1,464 @@
+
+#header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px 15px 30px;
+    background-color: white;
+    box-shadow: 0.5px 5px 15px rgba(0,0,0,0.09);
+    position: fixed;
+    top:0;
+    z-index: 99;
+    
+    }
+    
+    #icons{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    #icons #menu{
+    list-style: none;
+    padding: 0 20px;
+  
+    
+    }
+    
+    #icons li{
+    padding-right: 20px;
+    font-size: 21px;
+    color: black;
+    }
+    .logo{
+
+  width: 100px;
+    }
+    
+    #mobile{
+    display: none;
+    align-items: center;
+    
+    
+    }
+    .active{
+    z-index:100;
+    width:300px;
+  
+    position: relative;
+    }
+    .act-on{
+      z-index:100;
+      width:300px;
+    
+      position: relative;
+      }
+    .choose{
+    z-index:100;
+    width:300px;
+    
+    position: relative;
+    }
+    #bar{
+      cursor: pointer;
+    }
+    #close{
+    display: none;
+    }
+    #icons.active{
+    right: 0px;
+    
+    }
+    
+    
+    #icons li a i{
+    font-size: 26px;
+    color:black;
+    }
+    #icons li a span{
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+   
+    font-size: 25px;
+    margin-right: 20px;
+    font-weight: 550;
+    color: var(--gl-color-black);
+    }
+    
+    #icons li a.choose:hover::after
+    {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 2.5px;
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left:0px;
+    font-weight: 900;
+    
+    }
+    #icons li a.act-on::after
+    {
+    content: "";
+    width: 50%;
+    height: 2.5px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left:0px;
+    font-weight: 900;
+    
+    }
+    
+    .group {
+    margin-right: 20px;
+    display: flex;
+    margin-left: 10px;
+    
+    position: relative;
+    }
+    
+    .input {
+    
+    width: 150px;
+    padding: 6px 12px 6px 38px;
+    border-radius: 18px;
+    border: 1.2px solid black;
+    
+    outline: none;
+    opacity: 1;
+    
+    }
+    
+    .group svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    
+    transform: translate(0, -50%);
+    }
+    @media (max-width:768px){
+        #icons{
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top:0;
+            right:-300px;
+            height:100vh;
+            overflow-y: auto;
+            background-color: white;
+            box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+            padding:30px 0 0 10px;
+            transition: 0.3s ease;
+            flex: 1;
+            z-index: 100;
+            }
+            
+            #icons li{
+            margin-top: 20px;
+            margin-bottom: 10px; 
+            
+            }
+            
+            #icons .group{
+            
+            margin-bottom: 25px; 
+            background-color: white;
+            }
+            #icons.active{
+            right:0px;
+            } 
+            #icons.choose{
+            right:0px;
+            } 
+            #mobile{
+            
+            display: flex;
+            align-items: center;
+            }
+            #mobile i{
+            color:black;
+            margin-right: 12px;
+            font-size: 24px;
+            padding-left: 28px;
+            
+            
+            }
+            
+            #close{
+            position: absolute;
+            top:28px;
+            left:250px;
+            color:#222;
+            font-size:27px;
+            display: initial;
+            }
+            #search{
+            position: absolute;
+            top:30px;
+            left:15px;
+            
+            }
+            #menu i{
+            display: none;
+            }
+    }
+    @media(max-width:480px){
+        #icons{
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top:0;
+            right:-400px;
+            height:100vh;
+            background-color: white;
+            box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+          padding:30px 0 0 10px;
+          transition: 0.3s ease;
+          }
+          #header{
+            padding: 12px 15px 14px 5px;
+          }
+          #header .logo {
+      width: 82px;
+          }
+          
+          
+          #icons .group{
+            margin-bottom: 25px; 
+          
+          }
+          .input{
+            height:42px;
+            width:200px;
+          }
+          
+          .active{
+            z-index:100;
+            width:280px;
+            overflow: hidden;
+           
+          }
+          .choose{
+            z-index:100;
+            width:280px;
+            overflow: hidden;
+           
+          }
+          #icons.active{
+          right:0;
+          } 
+          #icons.choose{
+            right:0;
+           } 
+          #mobile {
+          padding-top: 10px;
+          display: flex;
+          align-items: center;
+          
+          }
+          
+          
+          
+          #bar{
+          
+          right:28px;
+          
+          }
+          #mobile i{
+          color:black;
+          font-size: 20px;
+          padding-left: 18px;
+          
+          }
+          #close{
+          position: absolute;
+          top:21.5px;
+          left: 243px;
+          color:#222;
+          font-size:25px;
+          font-weight: 600;
+          display: initial;
+          
+          }
+          #search{
+          position: absolute;
+          top:20px;
+          left:15px;
+          
+          }
+    }
+    @media(max-width:400px){
+        #header .logo {
+       width: 72px;
+            }
+            #header{
+              padding: 12px 10px 14px 5px;
+            }
+            #mobile i {
+            padding-left:8px;
+            }
+    }
+    
+
+@media(769px <= width <= 1136px){
+    #icons{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:0;
+    right:-300px;
+    height:100vh;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding:30px 0 0 10px;
+    transition: 0.3s ease;
+    flex: 1;
+    z-index: 100;
+    }
+    
+    #icons li{
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    
+    }
+    
+    #icons .group{
+    
+    margin-bottom: 25px; 
+    background-color: white;
+    }
+    #icons.active{
+    right:0px;
+    } 
+    #icons.choose{
+    right:0px;
+    } 
+    #mobile{
+    
+    display: flex;
+    align-items: center;
+    }
+    #mobile i{
+    color:black;
+    margin-right: 12px;
+    font-size: 24px;
+    padding-left: 28px;
+    
+    
+    }
+    
+    #close{
+    position: absolute;
+    top:28px;
+    left:250px;
+    color:#222;
+    font-size:27px;
+    display: initial;
+    }
+    #search{
+    position: absolute;
+    top:30px;
+    left:15px;
+    
+    }
+    #menu i{
+    display: none;
+    }
+    }
+
+    @media(width <= 1136px) {
+        .group{
+          display: none;
+        }
+       
+      }
+
+      
+  #xmark{
+    cursor: pointer;
+}
+.search-bars{
+
+position: absolute;
+left: 0;
+bottom: -35%;
+width: 100%;
+height: 25%;
+opacity: 0;
+display:flex;
+
+align-items: center;
+padding: 20px 0;
+transition: 0.4s ease-in-out;
+pointer-events: none;
+background-color: #fff;
+
+}
+.search-bars.active25{
+bottom: -52%;
+}
+.search-bars input{
+border-bottom: 1.2px solid #E6E6E6;
+border-top: 1.2px solid #E6E6E6;
+border-right: none;
+border-left: none;
+padding: 0px 35px;
+width: 100%;
+font-size: 18px;
+height: 90px;
+letter-spacing: .2em;
+
+outline: none;
+color: #000000;
+background-color: #fff;
+
+}
+.search-bars i{
+position: absolute;
+right:8%;
+font-size: 27px;
+}
+@media (max-width:480px){
+.search-bars input{
+font-size: 18px;
+height: 60px;
+
+
+} 
+.search-bars.active25{
+bottom: -50%;
+}
+.search-bars i{
+
+font-size: 22px;
+}
+}
+@media (max-width:400px){
+.search-bars input{
+
+font-size: 16px;
+height: 60px;  
+} 
+.search-bars.active25{
+bottom: -47%;
+}
+.search-bars i{
+
+font-size: 22px;
+}
+}
+
