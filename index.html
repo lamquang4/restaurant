@@ -41,9 +41,9 @@
       </div>
       <div id="mobile"> 
       
-        <a href="shop.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
         <a id="glass-search" onclick="showbar()" ><i class="fa-solid fa-magnifying-glass"></i> </a>
-      <a href="register.html"><i class="fa-regular fa-circle-user fa-lg" ></i></a>
+      <a href="#"><i class="fa-regular fa-circle-user fa-lg" ></i></a>
       
       <i id="bar" class="fa-solid fa-bars" style="color: #000000;"></i>
       
@@ -245,15 +245,15 @@
 
 <script>
 
-  const bar = document.getElementById('bar');
-  const icon = document.getElementById('icons');
- 
-  if(bar){
-    bar.addEventListener('click',() =>{
-  icon.classList.add('active');
-    })}
-  
-  const icons = document.getElementById("icons");
+const bar = document.getElementById('bar');
+    const icon = document.getElementById('icons');
+   
+    if(bar){
+      bar.addEventListener('click',() =>{
+    icon.classList.add('active');
+      })}
+   
+    const icons = document.getElementById("icons");
 const dong = document.getElementById("close");
 const barmenu = document.getElementById('bar');
 dong.addEventListener("click", function() {
@@ -261,17 +261,27 @@ dong.addEventListener("click", function() {
   icons.style.right = "-300px";
 });
 barmenu.addEventListener("click", function() {
-  icons.style.right = "0px";
+  icons.style.right = "0";
+  htmlElement.style.overflowY = 'scroll';
+  searchbars.classList.remove("active25");
+        searchbars.style.opacity="0";
+        searchbars.style.pointerEvents = 'none';
 });
+
+
 window.addEventListener("resize", function() {
 
-if (window.innerWidth >= 1138) {
-  icons.classList.remove('active');
-}
-else{
+    if (window.innerWidth >= 1136) {
+        searchbars.classList.remove("active25");
+        searchbars.style.opacity="0";
+        searchbars.style.pointerEvents = 'none';
+      icons.classList.remove('active');
+      htmlElement.style.overflowY = "scroll";
+    }
+   else{
     icons.style.right="-300px";
    }
-}
+    }
 );
 </script>
 
